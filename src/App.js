@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> Motivational Quote Generator </h1>
+      <div className="quote-container">
+          <h3 className="quote">"The future belongs to those who believe in the beauty of their dreams."</h3>
+          <p className="author">- Eleanor Roosevelt</p>
+      </div>
+      <button className="quote-button">Generate New Quote</button>
     </div>
   );
 }
