@@ -71,14 +71,7 @@ h1{
 }
 
 @media only screen and (max-width: 480px){
-  
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .quote-container{
+    padding: 4rem;
   }
 }
