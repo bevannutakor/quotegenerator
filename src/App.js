@@ -2,11 +2,18 @@ import './App.css';
 import React, { useState }  from 'react'
 
 function App() {
-  const generateQuote = () => {
+  const [quote, setQuote] = useState("");
+  const [author, setAuthor] = useState("");
+
+  const generateQuote = async () => {
+    let arrayOfQuotes = [];
+    try{
+      const quotesData = "https://api.quotable.io";
+    } catch (error){
+
+    }
   }
 
-  const [quote, setQuote] = useState("");
-  const [author, setAuthor] = useState("")
 
   return (
     <div className="App">
