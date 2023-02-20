@@ -9,9 +9,13 @@ function App() {
   const generateQuote = async () => {
     let arrayOfQuotes = [];
     try{
-      const quotesData = "https://api.quotable.io";
+      const quotesData = await axios.get("https://api.quotable.io/random");
+      arrayOfQuotes = quotesData.data;
+      console.log(arrayOfQuotes);
+      setQuote(arrayOfQuotes.content);
+      setAuthor(arrayOfQuotes.author);
     } catch (error){
-
+      console.log(error)
     }
   }
 
