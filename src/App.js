@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState }  from 'react'
+import axios from "axios";
 
 function App() {
   const [quote, setQuote] = useState("");
@@ -8,9 +9,7 @@ function App() {
   const generateQuote = async () => {
     let arrayOfQuotes = [];
     try{
-      const quotesData = "https://api.quotable.io/random";
-      arrayOfQuotes = quotesData.data
-      console.log(arrayOfQuotes);
+      const quotesData = "https://api.quotable.io";
     } catch (error){
 
     }
