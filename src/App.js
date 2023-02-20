@@ -7,7 +7,7 @@ function App() {
   const [author, setAuthor] = useState("");
 
   const generateQuote = async () => {
-    let arrayOfQuotes = [];
+    let arrayOfQuotes = [];//quotes
     try{
       const quotesData = await axios.get("https://api.quotable.io/random");
       arrayOfQuotes = quotesData.data;
